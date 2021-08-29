@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function changeElement(arr, oldIndex, newIndex) {
+    //     if (oldIndex >= arr.length) {
+    //         var k = oldIndex - arr.length + 1;
+    //         while (k--) {
+    //             arr.push(undefined);
+    //         }
+    //     }
+    //     arr.splice(newIndex, 0, arr.splice(oldIndex, 1)[0]);
+    //     return arr;
+    // }
+    //
+    // changeElement([5,6],0,1);
+    function changeElement(oldIndex, newIndex){
+        let arr = [];
+        arr.push(oldIndex,newIndex);
+        let newArr= arr.reverse()
+        alert(newArr)
+    }
+    changeElement(5,6)
+</script>
+</body>
+</html>
