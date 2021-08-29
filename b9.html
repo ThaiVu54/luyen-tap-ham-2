@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm
+trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1-->
+<script>
+    function inputArr(n) {
+        let arr = [];
+        do {
+            n = +prompt("Enter the size of the array")
+        } while (n <= 0)
+        for (let i = 0; i < n; i++) {
+            let x = prompt("nhap vao gia tri thu " + (i + 1) + ":")
+            arr.push(x)
+        }
+        return arr;
+    }
+    function inputCharacter(b) {
+        b = prompt("nhap ky tu bat ky: ")
+        return b;
+    }
+    function total(a) {
+        a = inputArr()
+        let b = inputCharacter()
+        let count = 0;
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] === b) {
+                count++;
+            } else return -1
+        }
+        return count;
+    }
+    document.write("so lan ky tu "+inputCharacter()+ " xuat hien trong mang: "+ total())
+    //
+    // total(inputArr())
+    // function count(a) { //ham so luong trong mang
+    //     let count = 0;
+    //     for (let i = 0; i < a.length; i++) {
+    //         if (a[i] === inputCharacter()) {
+    //             count++;
+    //         }
+    //     }
+    // if (isNaN(a[i]) === false) {
+    //     count++;
+    // }
+    // }
+    //     return count;
+    // }
+
+    // let array = [];
+    // inputArr(array)
+    // inputCharacter()
+    // document.write("so chu so trong mang: " + count(inputCharacter()))
+
+</script>
+</body>
+</html>
