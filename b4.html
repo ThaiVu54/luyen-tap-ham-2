@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="input" oninput="check()" type="text"/> is:
+<span id="result">result</span>
+<script>
+    function test(x) {
+        if (x % 1 === 0) {
+            return true;
+        } else return false;
+    }
+
+    function check() {
+        var input = document.getElementById("input").value;
+        var result = test(input)
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
