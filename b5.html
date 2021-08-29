@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.-->
+<script>
+    function integer(n) {
+        let arr = [];
+        n = parseFloat(prompt("nhap n "))
+        for (let i = 0; i < n; i++) {
+            let x = parseFloat(prompt("nhap gia tri thu: " + (i + 1)));
+            arr.push(x)
+        }
+        alert(arr);
+        let newArr = arr;
+        min = newArr[0];
+        for (let i = 1; i < newArr.length; i++) {
+            if(newArr[i]<min)
+                min = newArr[i];
+        }
+        alert("min: "+min)
+    }
+    integer();
+</script>
+</body>
+</html>
